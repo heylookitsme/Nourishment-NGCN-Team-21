@@ -1,40 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
+{% extends "base.html" %}
+{% load static %}
 
-    <link rel="stylesheet" href="css/all.css">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <header>
-        
-
-        <div class="navbar">
-            <div class="container">
-                <h2>nouris<sub> shment</sub></h2>
-                <ul>
-                    <li class="activ"> <a href="">Home</a> </li>
-                    <li><a href="#">LEARN </a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                    <li><a href="#">RESOURES</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    
-                </ul>
-                <button>Log In</button>
-                <button id="span">Register</button>
-            </div>
-
-        </div>
-            <div class="clear"></div>
-    </header>
-    <main>
+{% block content %}
+<main>
         <section>
             <div class="section1">
-                <img src="images/IMG.jpg" alt="An image that reflects poverty"  width="100%" height="100%" > 
+                <img src="{% static 'images/IMG.jpg' %}" alt="An image that reflects poverty"  width="100%" height="100%" > 
                 <h2 class="h2"><span id="h2">MILLIONS OF</span>
                 <br>    
                 ____________________________________________
@@ -80,7 +51,7 @@
             <div class="section3">
                 <div class="container">
                     <div class="image">
-                        <img src="images/img22.jpg" alt="An image that represents hunger and thirst"  width="500px" >
+                        <img src="{% static 'images/img22.jpg' %}" alt="An image that represents hunger and thirst"  width="500px" >
                     </div>
                     <div class="info"> 
                        <h2>About me</h2>
@@ -120,55 +91,4 @@
             <div class="clear"></div>
         </section>
     </main>
-
-    <footer>
-        <div>
-            <ul>
-                <li>Mobile app</li>
-                <li>Community</li>
-                <li>Company</li>
-                <li id="jenin" ><b>Nourishment</b></li>
-                <li>Help desk</li>
-                <li>Blog</li>
-                <li>Resources</li>
-            </ul>
-            <p>__________________________________________________________________________________________________________________________</p>
-            <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-twitter"></i>
-               </div>
-               <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fab fa-facebook-f"></i>
-               </div>
-               <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-instagram"></i>
-                </div>
-                <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-linkedin"></i>
-                </div>
-                <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-dribbble"></i>
-                </div>
-                <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-github"></i>
-                </div>
-                <br>
-                <br>
-           
-            <div>All Copyright reserved to Jenin A. Bostan </div>
-        </div>
-        <div class="clear"></div>
-        
-    </footer>
-
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+{% endblock %}

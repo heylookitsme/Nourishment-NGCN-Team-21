@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% if title %}
+    <title> {{ title }} NourishMent </title>
+    {% else %}
+    <title>NourishMent </title>
+    {% endif %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+          </head>
+    <body>
+        <header>
+        
+
+        <div class="navbar">
+            <div class="container">
+                <h2>nouris<sub> shment</sub></h2>
+                <ul>
+                    <li class="activ"> <a href="">Home</a> </li>
+                    <li><a href="/learn">LEARN </a></li>
+                    <li><a href="/support">SUPPORT</a></li>
+                    <li><a href="/resources">RESOURES</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    
+                </ul>
+		<button><a href="/users/update">Log In</a></button>
+		<button id="span"><a href="/users/register">Register</a></button>
+            </div>
+
+        </div>
+            <div class="clear"></div>
+    </header>
+        {% block content %}{% endblock %}
+       <footer>
+        <div>
+            <ul>
+                <li>Mobile app</li>
+                <li>Community</li>
+                <li>Company</li>
+                <li id="jenin" ><b>Nourishment</b></li>
+                <li>Help desk</li>
+                <li>Blog</li>
+                <li>Resources</li>
+            </ul>
+            <p>__________________________________________________________________________________________________________________________</p>
+            <div class="item10">
+                    <a href="#" target="_blank"></a>
+                    <i class="fa fa-twitter"></i>
+               </div>
+               <div class="item10">
+                    <a href="#" target="_blank"></a>
+                    <i class="fab fa-facebook-f"></i>  
+               </div>
+               <div class="item10">
+                    <a href="#" target="_blank"></a>
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <div class="item10">
+                    <a href="#" target="_blank"></a>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="item10">
+                    <a href="#" target="_blank"></a>
+                    <i class="fa fa-dribbble"></i>
+                </div>
+                <div class="item10">
+                    <a href="#" target="_blank"></a>
+                    <i class="fa fa-github"></i>
+                </div>
+                <br>
+                <br>
+		            <div>All Copyright reserved to Team 21, NGCN</div>
+        </div>  
+        <div class="clear"></div>  
+    </footer>
+
+
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    </body>
+<body>
