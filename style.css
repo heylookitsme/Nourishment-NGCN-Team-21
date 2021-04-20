@@ -7,68 +7,6 @@
 
 body {
     margin: 0;
-    padding: 0;
-}
-
-
-.clear {
-    clear: both;
-}
-
-/*header*/
-
-header .navbar h2 sub
-{
-    color: rgb(25, 186, 214);
-}
-
-/* section 1 */
-
-@media(max-width:700px){
-    .text{
-     font-size: 7px;
-    }
-    
-}
-.section1{
-    position: relative;
-    text-align: center;
-    color: black;
-    overflow: hidden;
-}
-
-.section1 img {
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-#h2{
-    font-size:1.98em;
-    color:black;
-    padding-top: -4.5px;
-        
-}
-.section1 .h2 {
-    position: absolute;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.7em;
-    transition: .1s ease-in-out;
-    color:rgb(13,13, 13);
-}
-
-.section1:hover img {
-    -webkit-filter: grayscale(0);
-	filter: grayscale(0);
-    
-}
-.section1:hover h2 {
-    color: white;
-    opacity: 0;
 }
 
 .top {
@@ -89,63 +27,18 @@ header .navbar h2 sub
    
 }
 
-/* section 4 */
-
-.section4 h2
-{
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 160px;
-    font-size: 40px;
+.clear {
+    clear: both;
 }
 
-.section4 p
+/*header*/
+
+header .navbar h2 sub
 {
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    font-size: 25px;
+    color: rgb(25, 186, 214);
 }
 
-.section4 .servies
-{
-    width: 23%;
-    float: right;
-    height: 100px;
-    background-color: #252f31;
-    margin: 10px;
-}
-
-/* section5 */
-.section5{
-    margin-top: 60px ;
-    padding: 70px 80px;
-    background-color: rgb(235, 232, 232);
-}
- 
-.section5 p
-{
-    padding: 10px ;
-    font-size: 23px;
-}
-.section5 button 
-{
-    text-align: center;
-    border: 1px solid rgb(44, 154, 243);
-    color:  rgb(44, 154, 243);
-    width: 120px;
-    height: 40px;
-    border-radius: 3px ;
-    float: right;
-    padding: 5px;
-}
-
-
-#span
-{
-    background-color:rgb(44, 154, 243);
-    color: white;
-}
+/*footer*/
 
 footer
 {
@@ -194,5 +87,4 @@ footer div ul li
 .item10:hover{
     background-color: black;
 }
-
 
