@@ -1,4 +1,29 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block content %}
-learn more lol
+<section class="about-section">
+   <h1>About<h1>
+      <div>
+         <span class="team-pictures">
+            <h2>TEAM 21</h2>
+            <img src="{% static 'images/mikayla.jpg' %}">
+            <img src="{% static 'images/jenin.jpg' %}">
+            <img src="{% static 'images/hunar.jpg' %}">
+            <img src="{% static 'images/sami.jpg' %}">
+            <img src="{% static 'images/rachel.png' %}">
+         </span>
+         <p>This is us!</p>
+      </div>
+      <div>
+         <span>
+            <img src="{% static 'images/NGCN-logo.png' %}">
+            <img src="{% static 'images/world-learning-logo.png' %}">
+         </span>
+         <span>
+            <h3>About World Learning and NGCN</h3>
+            <p> World Learning and NGCN are the programs through which we came together to bring you Nourishment. </p>
+         </span>
+      </div>
+</section>
 {% endblock %}

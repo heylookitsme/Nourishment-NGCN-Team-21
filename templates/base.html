@@ -10,77 +10,87 @@
     {% endif %}
 
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-          </head>
-    <body>
-        <header>
-        
 
-        <div class="navbar">
-            <div class="container">
-                <h2>nouris<sub> shment</sub></h2>
-                <ul>
-                    <li class="activ"> <a href="">Home</a> </li>
-                    <li><a href="/learn">LEARN </a></li>
-                    <li><a href="/support">SUPPORT</a></li>
-                    <li><a href="/resources">RESOURES</a></li>
-                    <li><a href="/about">ABOUT</a></li>
-                    
-                </ul>
-		<button><a href="/users/update">Log In</a></button>
-		<button id="span"><a href="/users/register">Register</a></button>
-            </div>
-
-        </div>
-            <div class="clear"></div>
-    </header>
-        {% block content %}{% endblock %}
-       <footer>
-        <div>
-            <ul>
-                <li>Mobile app</li>
-                <li>Community</li>
-                <li>Company</li>
-                <li id="jenin" ><b>Nourishment</b></li>
-                <li>Help desk</li>
-                <li>Blog</li>
-                <li>Resources</li>
-            </ul>
-            <p>__________________________________________________________________________________________________________________________</p>
-            <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-twitter"></i>
-               </div>
-               <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fab fa-facebook-f"></i>  
-               </div>
-               <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-instagram"></i>
-                </div>
-                <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-linkedin"></i>
-                </div>
-                <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-dribbble"></i>
-                </div>
-                <div class="item10">
-                    <a href="#" target="_blank"></a>
-                    <i class="fa fa-github"></i>
-                </div>
-                <br>
-                <br>
-		            <div>All Copyright reserved to Team 21, NGCN</div>
-        </div>  
-        <div class="clear"></div>  
-    </footer>
-
-
+    <!-- revisit -->
+<!--    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}"> -->
     <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-    </body>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><h2>nouris<sub> shment</sub></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/learn">LEARN <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="/support"><span class="sr-only">(current)</span>
+                  SUPPORT
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/resources" ><span class="sr-only">(current)</span> RESOURES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="/about"> <span class="sr-only">(current)</span>ABOUT</a>
+        </li>
+    </ul>
+       <a href="/users/update"><button class="btn btn-outline-light my-2 my-sm-0 mr-4">Log In</button></a>
+       <a href="/users/register"><button class="btn btn-outline-light my-2 my-sm-0 mr-2">Register</button></a>
+
+</div>
+</nav>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer class="wow bounceInUp">
+  <div class="footer-links">
+    <ul>
+      <li><a href="/about">Learn more</a></li> 
+      <li id="jenin" ><b>Nourishment</b></li>
+      <li><a href="/resources">Resources</a></li>
+  </ul>
+</div>
+
+<br>
+
+<div>
+    <hr style="border-style:dotted; border: 2; border-top: 1px solid rgba(0,0,0,1)">
+
+    <div class="item10">
+        <a href="https://github.com/heylookitsme/NGCN-Team-21/">
+            <i class="fa fa-github"></i></a>
+        </div>
+    </div>
+
+    <br>
+    <div>All Copyright reserved to Team 21, NGCN</div>     
+
+    <div class="clear"></div>
+
+</footer>
+
+
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
 <body>

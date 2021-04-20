@@ -110,9 +110,9 @@ header button{
 
 .section1 img {
     -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 #h2{
     font-size:1.98em;
@@ -134,7 +134,7 @@ header button{
 
 .section1:hover img {
     -webkit-filter: grayscale(0);
-	filter: grayscale(0);
+    filter: grayscale(0);
     
 }
 .section1:hover h2 {
@@ -144,7 +144,7 @@ header button{
 
 /* section 2 */
 .section2{
-    margin: 0;
+    margin: 30px 0px 0px 0px;
     padding: 0;
     
 }
@@ -265,18 +265,35 @@ header button{
     float: right;
     margin: 5px;
 }
+
+.about-section {
+
+}
+
+.team-pictures {
+    float:left;
+}
+
+.team-pictures img {
+    height: 100px;
+    width: 100px;
+}
+
 #span
 {
     background-color:rgb(44, 154, 243);
     color: white;
+}
+.footer-links{
+    display: inline flow-root list-item;
 }
 
 footer
 {
     font-family: Raleway;
     margin: 0 auto;
-	padding: 5em 3em;
-	text-align: center;
+    padding: 5em 3em;
+    text-align: center;
     background: white;
 }
 
@@ -318,5 +335,3 @@ footer div ul li
 .item10:hover{
     background-color: black;
 }
-
-
