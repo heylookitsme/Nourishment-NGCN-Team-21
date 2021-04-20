@@ -31,14 +31,10 @@ body {
     clear: both;
 }
 
-/*header*/
-
 header .navbar h2 sub
 {
     color: rgb(25, 186, 214);
 }
-
-/*footer*/
 
 footer
 {
@@ -49,28 +45,11 @@ footer
     background: white;
 }
 
-footer div
+footer
 {
   color: #AAA;
 }
 
-footer div ul {
-    float: left;
-    list-style: none;
-    margin: 0;
-    color: rgb(0, 0, 0);
-}
-
-footer div ul li 
-{
-    text-align: -webkit-match-parent;
-    float: left;
-    padding: 40px;
-}
-
- #logo{
-    font-size: 26px;   
-}
 
 
 .item10{
