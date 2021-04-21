@@ -12,3 +12,6 @@ def resources(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def support(request):
+    return render(request, 'campaigns.html')

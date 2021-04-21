@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+<section class="make-campaign">
+<h1>Make your campaign</h1>
+
+<form>
+Campaign title: <input type="text" id="firstName" name="firstName"><br>
+Campaign description: <input type="text" id="lastName" name="lastName"><br>
+Choose location: <input type="text" id="location" name="location"> <br>
+Add organization members (by name and email): <br>
+Campaign image: <br>
+Campaign resources: <br>
+Campaign phone number: <input type="number" id="phoneNumber" name="phoneNumber"><br>
+Campaign contact email: <input type="text" id="email" name="email"><br>
+Goal funds: <input type="number" id="goalFunds" name="goalFunds"><br>
+
+</form>
+</section>
+
+{% block content %}
+{% endblock%}

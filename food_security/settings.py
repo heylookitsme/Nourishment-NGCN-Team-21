@@ -25,7 +25,7 @@ SECRET_KEY = 'k$+p8z$#ai+!0l9$@erjqmsvxttf(4i1!#ns)q=cq-v#xi=*p3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['itsmerachel.xyz', '127.0.0.1']
 
 
 # Application definition
