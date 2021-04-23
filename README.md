@@ -6,3 +6,4 @@ django-widget-tweaks==1.4.8
 Pillow==8.1.2
 pytz==2021.1
 sqlparse==0.4.1
+#and also dont forget to run python manage.py collectstatic 
