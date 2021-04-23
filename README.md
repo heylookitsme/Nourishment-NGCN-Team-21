@@ -1,4 +1,6 @@
 # NGCN-Team-21
+Project for Next Gen Coders network. Addresses global food and water security.
+
 #please make sure install the follwoing requirements 
 asgiref==3.3.1
 Django==3.1.7

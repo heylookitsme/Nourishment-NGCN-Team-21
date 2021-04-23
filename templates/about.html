@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="about-section">
+   <h1>About<h1>
+      <div>
+         <span class="team-pictures">
+            <h2>TEAM 21</h2>
+            <img src="{% static 'images/mikayla.jpg' %}">
+            <img src="{% static 'images/jenin.jpg' %}">
+            <img src="{% static 'images/hunar.jpg' %}">
+            <img src="{% static 'images/sami.jpg' %}">
+            <img src="{% static 'images/rachel.png' %}">
+         </span>
+         <p>This is us! Members of this tema are from the U.S., Iraq-Kurdistan region, and Palestine. <br> 
+            They started working on this website/project during the week of February 16th. They brainstormed ideas ranging from global <br> 
+            awareness for violence against women to advocating for the distribution of actual information about COVID-19, <br> 
+            before deciding on the topic of water and food insecurity. They researched the topic and resources that would aid in either <br>
+            creating the website or ensuring every member knew what work had to be completed. Within 10 weeks, this team created the website <br>
+            you're viewing now. This team thanks you for engaging with this website, and hopes it will do some good to those that need help or education <br>
+            on twater and food insecurity.</p>
+      </div>
+      <br>
+      <div>
+         <span>
+            <img src="{% static 'images/NGCN-logo.png' %}">
+            <img src="{% static 'images/world-learning-logo.png' %}">
+         </span>
+         <span>
+            <h3>About World Learning and NGCN</h3>
+            <p> <a href="https://www.worldlearning.org/">World Learning</a>'s mission is "to work globally to enhance the capacity and commitment of individuals, institutions, and communities to create a more sustainable, peaceful, and just world."<br>
+               and <a href="https://www.worldlearning.org/program/nextgen-coders-network/">NextGen Coders Network</a> "brings together multidisciplinary university students and young professionals from Iraq, the Palestinian Territories, and the U.S. for a virtual exchange to learn coding and collaborate on a website or application that tackles a grand challenge".</p>
+         </span>
+      </div>
+</section>
+{% endblock %}
