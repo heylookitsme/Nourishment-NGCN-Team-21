@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="img-fluid" style="max-width: 900px;" src="{{object.image.url}}" alt="First slide">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h1>{{object.title}}</h1>
+        <p>location : {{object.location}}</p>
+        <p>number of funds : {{object.number_of_funds}}</p>
+        <p>Goal : {{object.goal}}</p>
+      </div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div>
+            <div class="media-body">
+              <h4 class="media-heading">admin : {{object.admin.username}}</h4>
+              <p>{{object.description}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

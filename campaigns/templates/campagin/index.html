@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<main>
+         <div class="top" >
+            <i class="fas fa-chevron-up"></i>
+        </div>  
+        <section class="wow bounceInUp">
+          <div class="contanier">
+              <div class="section1">
+                <img src="{% static 'img/IMG.jpg' %}" alt="An image that reflects poverty"  class="d-block w-100 img-fluid" > 
+                <div class="text">
+                    <h2 class="h2"><span id="h2">MILLIONS OF PEOPLE</span>
+                <br>    
+                ____________________________________________
+                <br>
+                <br>
+                STILL LACK RELIABLE SOURCES OF FOOD AND WATER</h2>
+              </div>
+                </div>
+                
+          </div>
+        </section>
+        <section id="testimonials" class="py-5 bg-light wow bounceInUp">
+            <div class="container">
+                <div class="row justify-content-center">
+                   <div class="col-md-4 text-center mb-5">
+                        <h3>What can we do?</h3>
+                    </div>   
+                </div>
+                <div class="card-deck">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Learn</h5>
+                      <p class="card-text">One of the most important ways you can support people and regions experiencing food and water scarcity is to be educated about the situation. Learn about where, and who, are most impacted by fod and water scarcity.</p>
+                      <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                    
+                  </div>
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Discover</h5>
+                      <p class="card-text">Know about food and water scarcity in general? In a particular region? Then, you can visit our resources page or our support page to support a campaign or find a location in need of support and create a campaign. </p>
+                      <a href="#" class="btn btn-primary">Discover</a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="card-deck mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Advocate and Support</h5>
+                      <p class="card-text">Visit our “Support” page to start, or fund a campaign. It works a little bit like GoFundMe-- you find a cause you want to support, and you contribute funds or volunteer hours. Or, you can choose to spread the word and ask others to support a campaign.</p>
+                      <a href="#" class="btn btn-primary">Support</a>
+                    </div>
+                    
+                  </div>
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Start Your Own Campaign</h5>
+                      <p class="card-text">Find a location or know a region facing dire food or water scarcity and want to draw attention to their situation? You can make your own campaign! </p>
+                      <a href="#" class="btn btn-primary">Start</a>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+
+
+            </div>
+            
+        </section>
+        <section class="wow bounceInUp">
+            <div class="container mt-5">
+               <div class="row align-items-center">
+                <div class="col-md-6 wow bounceOutLeft">
+                    <img class="w-100" src="{% static 'img/img22222.jpg' %}" height="500px" alt="">
+                </div>
+
+                <div class="col-md-6 wow bounceInRight">
+                  <h5>Nourishment’s Vision</h5>
+                    <p class="lead">We created this website with the intention to help the world effort to eliminate world thirst and hunger.  We found that among the numerous barriers to achieving this goal, a considerable portion of it was lack of  ready, and accessible information and a platform to advocate upon. </p>
+                </div>
+            </div>            
+            </div>
+        </section>
+       <section class="wow bounceInUp">
+            <div class="section4">
+                <div class="container">
+                    <h2>Together we can end world thirst and hunger</h2>
+                    <p>Here are some examples of campaigns from our current users, and campaigns lead by other organizations.</p>
+                    <div class="row mb-2 wow bounceInUp">
+                        {% for i in lists %}
+                        <div class="col-sm-3 col-6 mb-4">
+                            <img class="w-100" src="{{i.image.url}}" style="height: 25rem" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wow bounceInUp">
+            <div class="section5">
+                <p>We always welcome the addition of new campaigns to help achieve zero hunger and zero thirst. Learn more about food and water scarcity, and make your own campaign</p>
+                <button id="span" class="btn">Join Today</button>
+                <button class="btn">Contact us</button>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </main>
+{% endblock %}

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'campaigns.apps.CampaignsConfig',
+    'widget_tweaks',
 
 
 ]
@@ -123,11 +124,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR,'static')
-STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'static/'),
-) 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
 
+] #from where to get all static content
 
+STATIC_ROOT = os.path.join(BASE_DIR,'assets') #where to put static files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
